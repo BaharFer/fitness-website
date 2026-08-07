@@ -7,7 +7,6 @@ import { Hero } from "../sections/Hero";
 import { BrandPartners } from "../sections/BrandPartners";
 import { Programs } from "../sections/Programs";
 
-import { useSmoothScroll } from "../hooks/useSmoothScroll";
 
 const Statistics = lazy(() =>
   import("../sections/Statistics").then((m) => ({ default: m.Statistics }))
