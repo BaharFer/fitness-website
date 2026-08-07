@@ -47,13 +47,21 @@ export function Navbar() {
 
           <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
             {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-white/75 transition-colors hover:text-white"
-              >
-                {link.label}
-              </a>
+<button
+  key={link.href}
+  type="button"
+  onClick={() => {
+    const id = link.href.substring(1);
+
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  className="text-sm font-medium text-white/75 transition-colors hover:text-white"
+>
+  {link.label}
+</button>
             ))}
           </nav>
 
@@ -97,14 +105,23 @@ export function Navbar() {
           >
             <div className="glass-card flex flex-col gap-1 rounded-2xl p-4">
               {NAV_LINKS.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="rounded-xl px-3 py-3 text-sm font-medium text-white/85 transition-colors hover:bg-white/5 hover:text-white"
-                >
-                  {link.label}
-                </a>
+<button
+  key={link.href}
+  type="button"
+  onClick={() => {
+    setIsMenuOpen(false);
+
+    const id = link.href.substring(1);
+
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  className="rounded-xl px-3 py-3 text-left text-sm font-medium text-white/85 transition-colors hover:bg-white/5 hover:text-white"
+>
+  {link.label}
+</button>
               ))}
               <div className="mt-2 flex flex-col gap-2 border-t border-white/10 pt-3">
             <Link
