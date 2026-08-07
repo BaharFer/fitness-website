@@ -7,7 +7,7 @@ export const fadeUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: EASE_PREMIUM },
+    transition: { duration: 0.5, ease: EASE_PREMIUM },
   },
 };
 
@@ -24,7 +24,7 @@ export const scaleReveal: Variants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.9, ease: EASE_PREMIUM },
+    transition: { duration: 0.5, ease: EASE_PREMIUM },
   },
 };
 
@@ -52,7 +52,7 @@ export const textReveal: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.9, ease: EASE_PREMIUM },
+    transition: { duration: 0.5, ease: EASE_PREMIUM },
   },
 };
 

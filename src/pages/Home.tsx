@@ -52,7 +52,7 @@ function SectionFallback() {
 }
 
 export default function Home() {
-  useSmoothScroll();
+//   useSmoothScroll();
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-white">

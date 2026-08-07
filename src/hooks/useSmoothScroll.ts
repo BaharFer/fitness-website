@@ -10,11 +10,10 @@ export function useSmoothScroll() {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) return;
 
-    const lenis = new Lenis({
-      duration: 1.1,
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-    });
+  const lenis = new Lenis({
+  duration: 0.8,
+  smoothWheel: true,
+});;
 
     let rafId: number;
     function raf(time: number) {
