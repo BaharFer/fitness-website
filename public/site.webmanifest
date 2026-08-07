@@ -1,0 +1,12 @@
+{
+  "name": "Pulse — Train Smart. Live Better.",
+  "short_name": "Pulse",
+  "description": "Science-backed training programs, elite coaching, and a community that pushes you beyond your limits.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0F14",
+  "theme_color": "#0D0F14",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

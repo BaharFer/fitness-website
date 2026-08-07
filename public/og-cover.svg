@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151922"/>
+      <stop offset="100%" stop-color="#0D0F14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#8C7BFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8C7BFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="900" cy="120" r="380" fill="url(#glow)"/>
+  <text x="80" y="300" font-family="Space Grotesk, sans-serif" font-size="96" font-weight="700" fill="#FFFFFF">Stronger.</text>
+  <text x="80" y="400" font-family="Space Grotesk, sans-serif" font-size="96" font-weight="700" fill="#B8FF4A">Unstoppable.</text>
+  <text x="80" y="460" font-family="Inter, sans-serif" font-size="28" fill="#A9B2C3">Train smart. Live better. — PULSE</text>
+</svg>
