@@ -30,7 +30,7 @@ export function Navbar() {
         <div
           className={cn(
             'flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-5',
-            isScrolled ? 'glass-card shadow-[0_8px_32px_rgba(0,0,0,0.3)]' : 'bg-transparent'
+            isScrolled ? 'bg-[#0d0f14]/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]' : 'bg-transparent'
           )}
         >
           <a href="#top" className="flex items-center gap-2.5 text-lg font-bold tracking-tight">
