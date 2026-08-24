@@ -30,7 +30,9 @@ export function Navbar() {
         <div
           className={cn(
             'flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-5',
-            isScrolled ? 'bg-[#0d0f14]/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]' : 'bg-transparent'
+     isScrolled
+  ? 'bg-[#161a22]/70 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]'
+  : 'bg-transparent'
           )}
         >
           <a href="#top" className="flex items-center gap-2.5 text-lg font-bold tracking-tight">
@@ -103,7 +105,7 @@ export function Navbar() {
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="container-pulse mt-2 lg:hidden"
           >
-            <div className="glass-card flex flex-col gap-1 rounded-2xl p-4">
+            <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-[#161a22]/90 p-4 shadow-[0_12px_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl">
               {NAV_LINKS.map((link) => (
 <button
   key={link.href}
